@@ -1,0 +1,4 @@
+{
+  "_id" : "Nested",
+  "schema" : "{\n  \"title\": \"A list of tasks\",\n  \"type\": \"object\",\n  \"required\": [\n    \"title\"\n  ],\n  \"properties\": {\n    \"title\": {\n      \"type\": \"string\",\n      \"title\": \"Task list title\"\n    },\n    \"tasks\": {\n      \"type\": \"array\",\n      \"title\": \"Tasks\",\n      \"items\": {\n        \"type\": \"object\",\n        \"required\": [\n          \"title\"\n        ],\n        \"properties\": {\n          \"title\": {\n            \"type\": \"string\",\n            \"title\": \"Title\",\n            \"description\": \"A sample title\"\n          },\n          \"details\": {\n            \"type\": \"string\",\n            \"title\": \"Task details\",\n            \"description\": \"Enter the task details\"\n          },\n          \"done\": {\n            \"type\": \"boolean\",\n            \"title\": \"Done?\",\n            \"default\": false\n          }\n        }\n      }\n    }\n  }\n}"
+}
